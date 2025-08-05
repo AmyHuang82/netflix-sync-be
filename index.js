@@ -12,6 +12,8 @@ const io = new Server(server, {
 
 // 全域儲存
 const globalRooms = new Map()
+io.globalRooms = globalRooms
+
 const globalClients = new Map()
 app.use(cors())
 app.use(express.json())
